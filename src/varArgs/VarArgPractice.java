@@ -1,0 +1,95 @@
+package varArgs;
+
+public class VarArgPractice {
+
+	public static void main(String[] args) {
+	}
+	}
+//		  
+//	    String sentence = sentenceBuilder("Snail", "Pillbug", "Bird", "cat", "fish");
+//	    String word = wordBuilder("Dragon", "Fly", "Dragonite", "Flyonite");
+//	    
+//	    System.out.println(sentence);
+//	    System.out.println(word);
+//
+//	  }
+	  // Task 4
+	  // create a static method sentenceBuilder
+	  // take string vararg words as parameter
+	  // return the concatenation of all the arguments user passed
+	  // call this method to see your result
+//	  public static String sentenceBuilder(String... words) {
+//
+//	    String sentence = "";
+//	    for (String str : words)
+//	      sentence += str + " ";
+//	    return sentence;
+//
+//	  }
+
+	  // Task 5
+	  // create a static method wordBuilder
+	  // take string vararg words as parameter
+	  // return the concatenation of last character
+	  // from all the words user passed
+	  // call this method to see your result
+//
+//	  public static String wordBuilder(String... values) {
+//	    
+//	    String concatenation = "";
+//	    for (String word : values) {
+//	      concatenation +=  word.charAt(word.length() - 1);
+//	    }
+//	    return concatenation ; 
+//	  }
+//
+
+	
+
+/// varArgs --is represented in method parameter using ...
+/*
+ *  ... CAN ONLY BE USED AS METHOD PARAMTERS 
+ *  IT CAN NOT BE USED ANYWHERE ELSE 
+ *  
+ *  Calling a method that have varArg 
+ *   we directly pass variable number of arguments 
+ *   You may also pass an array --(not so common but possible)
+ *   
+ *   What if we have more than one parameter in methods 
+ *   
+ *    * If there is multiple parameters VarArgs should be last one 
+
+ *   Multiple varargs in one method paramters are not allowed 
+ *   you can have at most one varArg in one method 
+ *   
+ *   
+ *   a method that takes varArg as parameter can accept a array object 
+ *   as an argument 
+ *    
+ *   a method that takes array as parameter can not accept a varArg
+ *   as an argument 
+ *   
+ * 
+doSomething("magic horse", 1,2,3,4,45,5,6,7,8,8,9,9);
+
+//doSomethingElse(1,2,4,5,"Magic Horse"); 
+//doSomethingElse(5,"Magic Horse");
+
+}
+
+public static void doSomething(String name, int... nums) {
+System.out.println("do something was called");
+}
+
+
+/*
+* If there is multiple parameters, VarArgs should be last one 
+* */
+//public static void doSomethingElse(int... nums , String name) {
+//System.out.println("do SomethingElse was called");
+//}
+
+
+
+
+
