@@ -25,3 +25,4 @@ public class MethodsBatch10 {
 		System.out.println("Meal is ready! Enjoy!");
 	}
 }
+//new edit
